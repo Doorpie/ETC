@@ -1,5 +1,66 @@
 .header
     &__nav
         display: grid
-        dg
-        grid-template-columns: 1fr 1fr 1fr 1fr
+        align-items: center
+        justify-items: center
+        grid-template-columns: 1fr 1fr 20fr 1fr
+        grid-gap: 10px
+        background: #ffffff   
+        height: 48px
+
+.nav
+    &__menu
+        position: relative
+        margin-top: 0.1em
+        margin-left: 0.8em
+
+    &__reports
+        
+
+    &__logo
+        text-transform: uppercase
+        color: $blue
+        font: 500 1rem/1em 'Roboto'
+        letter-spacing: -1.59px
+        margin-left: -6em
+
+    &__email
+        width: 48px
+        height: 48px
+        object-fit: contain
+        margin-right: 0.5em
+        cursor: pointer
+
+.reports
+    &__link
+        text-decoration: none
+        text-transform: uppercase
+        color: $blue
+        font: 500 1rem/1em 'Roboto'
+
+.menu
+    &__button
+        display: block
+        width: 24px
+        height: 24px
+
+    &__lines,
+    &__lines::after,
+    &__lines::before
+        position: absolute
+        width: 18px
+        height: 1px
+        background: $blue
+
+    &__lines
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+        &::before
+            content: ""
+            top: -4px
+
+        &::after
+            content: ""
+            top: 4px
