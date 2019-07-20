@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body class="main-wrap">
     <header class="header">
         <nav class="nav header__nav">
@@ -19,12 +21,401 @@
             <div class="reports nav__reports">
                 <a href="#" class="reports__link">Отчеты</a>
             </div>
-            <div class="nav__logo">Avialogo</div>
+            <h1 class="nav__logo">Avialogo</h1>
             <div class="mail nav__email">
                 <img src="./img/header/email.svg" alt="email" class="email__img">
             </div>
         </nav>
     </header>
-    <main class="main"></main>
+    <!-- header -->
+    <main class="main">
+        <section class="main-filter main__filter">
+            <h2 class="main-filter__title">Общий отчет</h2>
+            <label for="" class="main-filter__title-product">Продукт</label>
+            <label for="" class="main-filter__title-period">Период</label>
+            <select name="" id="" class="select main-filter__select-product">
+                <option value="" class="main-filter__option">Отели</option>
+            </select>
+            <select name="" id="" class="select main-filter__select-period">
+                <option value="" class="main-filter__option">Текущий месяц</option>
+            </select>
+            <button class="main-filter__btn-export">Экспорт<span class="main-filter__lines"></span></button>
+            <button class="main-filter__btn-clear">Сбросить</button>
+            <button class="main-filter__btn-setting">Настроить</button>
+        </section>
+        <!-- // main-filter main__filter-->
+        <section class="main-report main__report">
+            <div class="report-filter main-report__filter">
+                <a href="#" class="report-filter__link-settings">Настроить поля таблицы</a>
+                <a href="#" class="report-filter__link-filter">Спрятать фильтры</a>
+                <a href="#" class="report-filter__link-clean">Очистить все фильтры</a>
+                <div class="label report-filter__text-select">Показывать на странице</div>
+                <select name="" id="" class="select report-filter__select-page">
+                    <option value="">15</option>
+                </select>
+            </div>
+            <!-- // report-filter main-report__filter-->
+            <div class="report-content main-report__content">
+                <div class="report-content__item">
+                    <div class="report-content__title">GDS<img src="./img/main/main__report/arrow-counter.svg" alt="img"
+                            class="report-content__title-img"></div>
+                    <div class="report-content__subtitle">
+                        <input type="text" class="report-content__subtitle-input">
+                    </div>
+                    <div class="report-content__content-rows">
+                        <div class="report-content__content-text">Amadeus DE DE</div>
+                        <div class="report-content__content-text">Amadeus DE DE</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus DE DE</div>
+                    </div>
+                </div>
+                <div class="report-content__item">
+                    <div class="report-content__title">Поставщик<img src="./img/main/main__report/arrow-counter.svg"
+                            alt="img" class="report-content__title-img"></div>
+                    <div class="report-content__subtitle">
+                        <input type="text" class="report-content__subtitle-input">
+                    </div>
+                    <div class="report-content__content-rows">
+                        <div class="report-content__content-text">Amadeus DE WS</div>
+                        <div class="report-content__content-text">Amadeus DE WS</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus DE WS</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus DE WS</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                        <div class="report-content__content-text">Amadeus DE WS</div>
+                        <div class="report-content__content-text">Amadeus DE WS</div>
+                        <div class="report-content__content-text">Amadeus</div>
+                    </div>
+                </div>
+                <div class="report-content__item">
+                    <div class="report-content__title">Заказ<img src="./img/main/main__report/arrow-counter.svg"
+                            alt="img" class="report-content__title-img"></div>
+                    <div class="report-content__subtitle">
+                        <input type="text" class="report-content__subtitle-input">
+                    </div>
+                    <div class="report-content__content-rows">
+                        <div class="report-content__content-text">869504</div>
+                        <div class="report-content__content-text">869504</div>
+                        <div class="report-content__content-text">869504</div>
+                        <div class="report-content__content-text">869504</div>
+                        <div class="report-content__content-text">869504</div>
+                        <div class="report-content__content-text">869504</div>
+                        <div class="report-content__content-text">869504</div>
+                        <div class="report-content__content-text">869504</div>
+                        <div class="report-content__content-text">869504</div>
+                        <div class="report-content__content-text">869504</div>
+                        <div class="report-content__content-text">869504</div>
+                        <div class="report-content__content-text">869504</div>
+                        <div class="report-content__content-text">869504</div>
+                    </div>
+                </div>
+                <div class="report-content__item">
+                    <div class="report-content__title">Номер PNR<img src="./img/main/main__report/arrow-counter.svg"
+                            alt="img" class="report-content__title-img"></div>
+                    <div class="report-content__subtitle">
+                        <input type="text" class="report-content__subtitle-input" value="JGU0LC">
+                    </div>
+                    <div class="report-content__content-rows">
+                        <div class="report-content__content-text">JGU0LC</div>
+                        <div class="report-content__content-text">JGU0LC</div>
+                        <div class="report-content__content-text">JGU0LC</div>
+                        <div class="report-content__content-text">JGU0LC</div>
+                        <div class="report-content__content-text">JGU0LC</div>
+                        <div class="report-content__content-text">JGU0LC</div>
+                        <div class="report-content__content-text">JGU0LC</div>
+                        <div class="report-content__content-text">JGU0LC</div>
+                        <div class="report-content__content-text">JGU0LC</div>
+                        <div class="report-content__content-text">JGU0LC</div>
+                        <div class="report-content__content-text">JGU0LC</div>
+                        <div class="report-content__content-text">JGU0LC</div>
+                        <div class="report-content__content-text">JGU0LC</div>
+                    </div>
+                </div>
+                <div class="report-content__item">
+                    <div class="report-content__title">Office ID<img src="./img/main/main__report/arrow-counter.svg"
+                            alt="img" class="report-content__title-img"></div>
+                    <div class="report-content__subtitle">
+                        <div class="report-content__subtitle-none"></div>
+                    </div>
+                    <div class="report-content__content-rows">
+                        <div class="report-content__content-text">NUEL134090B2C</div>
+                        <div class="report-content__content-text">NUEL134090B2C</div>
+                        <div class="report-content__content-text">NUEL134090B2C</div>
+                        <div class="report-content__content-text">NUEL134090B2C</div>
+                        <div class="report-content__content-text">NUEL134090B2C</div>
+                        <div class="report-content__content-text">NUEL134090B2C</div>
+                        <div class="report-content__content-text">NUEL134090B2C</div>
+                        <div class="report-content__content-text">NUEL134090B2C</div>
+                        <div class="report-content__content-text">NUEL134090B2C</div>
+                        <div class="report-content__content-text">NUEL134090B2C</div>
+                        <div class="report-content__content-text">NUEL134090B2C</div>
+                        <div class="report-content__content-text">NUEL134090B2C</div>
+                        <div class="report-content__content-text">NUEL134090B2C</div>
+                    </div>
+                </div>
+                <div class="report-content__item">
+                    <div class="report-content__title">Канал продажи<img src="./img/main/main__report/arrow-counter.svg"
+                            alt="img" class="report-content__title-img"></div>
+                    <div class="report-content__subtitle">
+                        <select name="" id="" class="select report-content__subtitle-select">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="report-content__content-rows">
+                        <div class="report-content__content-text">B2C</div>
+                        <div class="report-content__content-text">B2C</div>
+                        <div class="report-content__content-text">B2C</div>
+                        <div class="report-content__content-text">B2C</div>
+                        <div class="report-content__content-text">B2C</div>
+                        <div class="report-content__content-text">B2C</div>
+                        <div class="report-content__content-text">B2C</div>
+                        <div class="report-content__content-text">B2C</div>
+                        <div class="report-content__content-text">B2C</div>
+                        <div class="report-content__content-text">B2C</div>
+                        <div class="report-content__content-text">B2C</div>
+                        <div class="report-content__content-text">B2C</div>
+                        <div class="report-content__content-text">B2C</div>
+                    </div>
+                </div>
+                <div class="report-content__item">
+                    <div class="report-content__title">Фрейм<img src="./img/main/main__report/arrow-counter.svg"
+                            alt="img" class="report-content__title-img"></div>
+                    <div class="report-content__subtitle">
+                        <select name="" id="" class="select report-content__subtitle-select">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="report-content__content-rows">
+                        <div class="report-content__content-text">Какой-то фрейм</div>
+                        <div class="report-content__content-text">Какой-то фрейм</div>
+                        <div class="report-content__content-text">Какой-то фрейм</div>
+                        <div class="report-content__content-text">Какой-то фрейм</div>
+                        <div class="report-content__content-text">Какой-то фрейм</div>
+                        <div class="report-content__content-text">Какой-то фрейм</div>
+                        <div class="report-content__content-text">Какой-то фрейм</div>
+                        <div class="report-content__content-text">Какой-то фрейм</div>
+                        <div class="report-content__content-text">Какой-то фрейм</div>
+                        <div class="report-content__content-text">Какой-то фрейм</div>
+                        <div class="report-content__content-text">Какой-то фрейм</div>
+                        <div class="report-content__content-text">Какой-то фрейм</div>
+                        <div class="report-content__content-text">Какой-то фрейм</div>
+                    </div>
+                </div>
+                <div class="report-content__item">
+                    <div class="report-content__title">Статус<img src="./img/main/main__report/arrow-counter.svg"
+                            alt="img" class="report-content__title-img"></div>
+                    <div class="report-content__subtitle">
+                        <select name="" id="" class="select report-content__subtitle-select">
+                            <option value="">Подтв...</option>
+                        </select>
+                    </div>
+                    <div class="report-content__content-rows">
+                        <div class="report-content__content-text report-content__content-text--expected">Ожидает оплаты
+                        </div>
+                        <div class="report-content__content-text report-content__content-text--cb">Подтвержден</div>
+                        <div class="report-content__content-text report-content__content-text--error">Ошибка</div>
+                        <div class="report-content__content-text report-content__content-text--cb">Подтвержден</div>
+                        <div class="report-content__content-text report-content__content-text--expected">Ожидает оплаты
+                        </div>
+                        <div class="report-content__content-text report-content__content-text--error">Ошибка</div>
+                        <div class="report-content__content-text report-content__content-text--cb">Подтвержден</div>
+                        <div class="report-content__content-text report-content__content-text--error">Ошибка</div>
+                        <div class="report-content__content-text report-content__content-text--expected">Ожидает оплаты
+                        </div>
+                        <div class="report-content__content-text report-content__content-text--error">Ошибка</div>
+                        <div class="report-content__content-text report-content__content-text--cb">Подтвержден</div>
+                        <div class="report-content__content-text report-content__content-text--cb">Подтвержден</div>
+                        <div class="report-content__content-text report-content__content-text--expected">Ожидает оплаты
+                        </div>
+                    </div>
+                </div>
+                <div class="report-content__item">
+                    <div class="report-content__title">Субагент<img src="./img/main/main__report/arrow-counter.svg"
+                            alt="img" class="report-content__title-img"></div>
+                    <div class="report-content__subtitle">
+                        <input type="text" class="report-content__subtitle-input">
+                    </div>
+                    <div class="report-content__content-rows">
+                        <div class="report-content__content-text">Lora Konstantinova</div>
+                        <div class="report-content__content-text">Lora Konstantinova</div>
+                        <div class="report-content__content-text">Lora Konstantinova</div>
+                        <div class="report-content__content-text">Lora Konstantinova</div>
+                        <div class="report-content__content-text">Lora Konstantinova</div>
+                        <div class="report-content__content-text">Lora Konstantinova</div>
+                        <div class="report-content__content-text">Lora Konstantinova</div>
+                        <div class="report-content__content-text">Lora Konstantinova</div>
+                        <div class="report-content__content-text">Lora Konstantinova</div>
+                        <div class="report-content__content-text">Lora Konstantinova</div>
+                        <div class="report-content__content-text">Lora Konstantinova</div>
+                        <div class="report-content__content-text">Lora Konstantinova</div>
+                        <div class="report-content__content-text">Lora Konstantinova</div>
+                    </div>
+                </div>
+                <div class="report-content__item">
+                    <div class="report-content__title">Город<img src="./img/main/main__report/arrow-counter.svg"
+                            alt="img" class="report-content__title-img"></div>
+                    <div class="report-content__subtitle">
+                        <input type="text" class="report-content__subtitle-input">
+                    </div>
+                    <div class="report-content__content-rows">
+                        <div class="report-content__content-text">Москва</div>
+                        <div class="report-content__content-text">Москва</div>
+                        <div class="report-content__content-text">Москва</div>
+                        <div class="report-content__content-text">Москва</div>
+                        <div class="report-content__content-text">Москва</div>
+                        <div class="report-content__content-text">Москва</div>
+                        <div class="report-content__content-text">Москва</div>
+                        <div class="report-content__content-text">Москва</div>
+                        <div class="report-content__content-text">Москва</div>
+                        <div class="report-content__content-text">Москва</div>
+                        <div class="report-content__content-text">Москва</div>
+                        <div class="report-content__content-text">Москва</div>
+                        <div class="report-content__content-text">Москва</div>
+                    </div>
+                </div>
+            </div>
+            <!-- // report-content main-report__content -->
+            <div class="repeat-footer main-report__footer">
+                <div class="repeat-footer__page">
+                    <a href="#" class="repeat-footer__page-link">1</a>
+                    <a href="#" class="repeat-footer__page-link">2</a>
+                    <a href="#" class="repeat-footer__page-link">3</a>
+                    <a href="#" class="repeat-footer__page-link">&raquo;</a>
+                </div>
+                <div class="repeat-footer__text">
+                    Всего: 679 (из них Возврат: 0, Аннулировать: 0)
+                </div>
+            </div>
+            <!-- // repeat-footer main-report__footer -->
+        </section>
+        <!-- // main-report main__report -->
+    </main>
+    <!-- // main -->
+    <aside class="settings-bar">
+        <div class="settings-bar__overlay"></div>
+        <div class="settings-bar__wrap">
+            <div class="settings-bar__title">Настройка полей таблицы</div>
+            <div class="settings-bar__close">
+                <img src="./img/settings-bar/close.svg" alt="img" class="settings-bar__close-img">
+            </div>
+            <div class="template settings-bar__template">
+                <div class="template__title">Шаблоны</div>
+                <a href="#" class="template__link">Стандартные поля по умолчанию</a>
+            </div>
+            <!-- // template settings-bar__template-->
+            <div class="data settings-bar__data">
+                <div class="data__title">Данные для отображения</div>
+                <input type="checkbox" name="" id="data__text" checked class="data__checkbox">
+                <span class="data__checkbox-fake"></span>
+                <label for="data__text" class="data__text">Отображать все данные</label>
+            </div>
+            <!-- // data settings-bar__data-->
+            <div class="filter-bar settings-bar__filter">
+                <input type="checkbox" name="" id="1" checked class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="1" class="filter-bar__name">GDS</label>
+                <input type="checkbox" name="" id="2" checked class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="2" class="filter-bar__name">Поставщик</label>
+                <input type="checkbox" name="" id="3" checked class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="3" class="filter-bar__name">Заказ</label>
+                <input type="checkbox" name="" id="4" checked class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="4" class="filter-bar__name">Номер PNR</label>
+                <input type="checkbox" name="" id="5" checked class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="5" class="filter-bar__name">Office ID</label>
+                <input type="checkbox" name="" id="6" checked class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="6" class="filter-bar__name">Канал продаж</label>
+                <input type="checkbox" name="" id="7" checked class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="7" class="filter-bar__name">Фрейм</label>
+                <input type="checkbox" name="" id="8" checked class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="8" class="filter-bar__name">Сайт</label>
+                <input type="checkbox" name="" id="9" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="9" class="filter-bar__name">Субагент</label>
+                <input type="checkbox" name="" id="10" checked class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="10" class="filter-bar__name">Корпорат</label>
+                <input type="checkbox" name="" id="11" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="11" class="filter-bar__name">Забронировал</label>
+                <input type="checkbox" name="" id="12" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="12" class="filter-bar__name">Выписал</label>
+                <input type="checkbox" name="" id="13" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="13" class="filter-bar__name">Отменил</label>
+                <input type="checkbox" name="" id="14" checked class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="14" class="filter-bar__name">Гость</label>
+                <input type="checkbox" name="" id="15" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="15" class="filter-bar__name">Заезд</label>
+                <input type="checkbox" name="" id="16" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="16" class="filter-bar__name">Выезд</label>
+                <input type="checkbox" name="" id="17" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="17" class="filter-bar__name">Отель</label>
+                <input type="checkbox" name="" id="18" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="18" class="filter-bar__name">Класс отеля</label>
+                <input type="checkbox" name="" id="19" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="19" class="filter-bar__name">Страна</label>
+                <input type="checkbox" name="" id="20" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="20" class="filter-bar__name">Статус</label>
+                <input type="checkbox" name="" id="21" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="21" class="filter-bar__name">Город</label>
+                <input type="checkbox" name="" id="22" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="22" class="filter-bar__name">Оплата</label>
+                <input type="checkbox" name="" id="23" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="23" class="filter-bar__name">Действие</label>
+                <input type="checkbox" name="" id="24" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="24" class="filter-bar__name">Комиссия кабинета</label>
+                <input type="checkbox" name="" id="25" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="25" class="filter-bar__name">Комиссия субагента</label>
+                <input type="checkbox" name="" id="26" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="26" class="filter-bar__name">Сервисный сбор</label>
+                <input type="checkbox" name="" id="27" class="filter-bar__checkbox">
+                <span class="filter-bar__checkbox-fake"></span>
+                <label for="27" class="filter-bar__name">Цена нетто</label>
+            </div>
+            <!-- // filter-bar settings-bar__filter -->
+        </div>
+    </aside>
+    <!-- // settings-bar -->
+
+    <!-- Add jq -->
+    <script src="./js/jquery.min.js"></script>
+
+    <!-- Add script -->
+    <script src="./js/script.js"></script>
 </body>
+
 </html>

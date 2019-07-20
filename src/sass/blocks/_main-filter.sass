@@ -1,0 +1,174 @@
+.main
+    &__filter
+        max-width: 1140px
+        width: 100%
+        background: #ffffff
+        padding: 25px
+        display: grid
+        grid-template-columns: 1fr 3fr 1fr 1fr 1fr
+        grid-template-areas: "title . . . ." "title-product title-period . . ." "select-product select-period btn-export btn-clear btn-setting"
+        grid-column-gap: 10px
+
+// Экстрамалые девайсы («портретные телефоны», < 576px)
+@media (max-width: 575.98px) 
+     .main
+        &__filter
+            grid-template-columns: minmax(140px, 1fr) 1fr 1fr 1fr 1fr
+            grid-template-areas: "title . . . ." "title-product . . . ." "select-product . . . ." "title-period . . . ." "select-period . . . ." "btn-export . . . ." "btn-clear . . . . " "btn-setting . . . ."
+            grid-row-gap: 10px
+
+// Малые девайсы («ландшафтные», >= 575px)
+@media (min-width: 576px) and (max-width: 767.98px) 
+    .main
+        &__filter
+            grid-template-columns: minmax(140px, 1fr) 1fr 1fr 1fr 1fr
+            grid-template-areas: "title . . . ." "title-product . title-period . ." "select-product . select-period . ." "btn-export btn-clear btn-setting . ."
+            grid-row-gap: 10px
+
+// Средние девайсы («таблетки», >= 768px) 
+@media (min-width: 768px) and (max-width: 991.98px) 
+    .main
+        &__filter
+            grid-template-columns: minmax(140px, 1fr) 1fr 1fr 1fr 1fr
+            grid-template-areas: "title . . . ." "title-product  title-product title-period title-period ." "select-product select-product select-period . ." "btn-export btn-clear btn-setting . ."
+            grid-row-gap: 10px
+
+.main-filter
+    &__title
+        grid-area: title
+        font: 500 1rem/1em 'Roboto'
+        color: $black
+        margin: 0
+        margin-bottom: 30px
+
+    &__title-period, &__title-product
+        margin-left: 9px
+        color: $gray-text
+        font: .75rem/1.33 'Roboto'
+        margin-bottom: 4px
+
+    &__select-period, &__select-product
+        color: $black
+        font: 500 .75rem/1em 'Roboto'
+        width: 250px
+        height: 36px
+        border: solid 1px $gray
+        padding: 1em 0.4em 0.5em 0.6em
+
+    &__btn-export,  &__btn-clear, &__btn-setting
+        color: $blue
+        font: 500 .875rem/1em 'Roboto'
+        letter-spacing: 0.5px
+        height: 36px
+        border-radius: 2px
+        border: solid 1px $blue
+        background-color: #ffffff
+        cursor: pointer
+
+    &__title-period
+        grid-area: title-period
+
+    &__title-product
+        grid-area: title-product
+
+    &__select-period
+        grid-area: select-period
+
+    &__select-product
+        grid-area: select-product
+        margin-right: 1.7em
+
+    &__btn-export
+        position: relative
+        grid-area: btn-export
+        margin-left: 10px
+        padding: 10px 41px 10px 38px
+        background: url("../img/main/arrow-down.svg") no-repeat right 5px top 50%,  url("../img/main/main__filter/ic-export.svg") no-repeat left 15px top 50%
+        background-size: 24px 24px, 14px 17px
+
+        &::after
+            content: ''
+            position: absolute
+            width: 0
+            height: 100%
+            border: 1px solid $blue
+            background: $blue
+            top: 0
+            right: 2.4em
+
+    &__btn-clear
+        grid-area: btn-clear
+
+    &__btn-setting
+        grid-area: btn-setting
+        background: $blue
+        color: #ffffff
+
+// Экстрамалые девайсы («портретные телефоны», < 576px)
+@media (max-width: 575.98px) 
+    .main-filter
+        &__title
+            font-size: 1.5rem
+
+        &__title-period, &__title-product
+            font-size:  1rem
+            margin-bottom: 0
+
+        &__select-period, &__select-product
+            font-size: 1rem
+
+        &__btn-export,  &__btn-clear, &__btn-setting
+            width: 140px
+            font-size: 1rem
+
+        &__btn-export
+            &::after
+                margin-right: 1.2em
+
+        &__btn-export
+            margin-left: 0
+
+// Малые девайсы («ландшафтные», >= 575px)
+@media (min-width: 576px) and (max-width: 767.98px) 
+    .main-filter
+        &__title
+            font-size: 1.5rem
+
+        &__title-period, &__title-product
+            font-size:  1rem
+            margin-bottom: 0
+
+        &__select-period, &__select-product
+            font-size: 1rem
+            width: 180px
+
+        &__btn-export,  &__btn-clear, &__btn-setting
+            width: 140px
+            font-size: 1rem
+
+        &__btn-export
+            &::after
+                margin-right: 1.2em
+
+        &__btn-export
+            margin-left: 0
+
+// Средние девайсы («таблетки», >= 768px) 
+@media (min-width: 768px) and (max-width: 991.98px) 
+    .main-filter
+        &__title
+            font-size: 1.5rem
+
+        &__title-period, &__title-product
+            font-size:  1rem
+            margin-bottom: 0
+
+        &__select-period, &__select-product
+            font-size: 1rem
+
+        &__btn-export,  &__btn-clear, &__btn-setting
+            width: 140px
+            font-size: 1rem
+
+        &__btn-export
+            margin-left: 0

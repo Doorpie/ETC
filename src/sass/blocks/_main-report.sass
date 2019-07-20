@@ -1,0 +1,216 @@
+.main
+    &__report
+        max-width: 1140px
+        width: 100%
+        background: #ffffff
+        padding: 1.313em 1.563em
+        display: grid
+        grid-template-rows: minmax(20px, auto) 1fr minmax(24px, auto)
+        grid-gap: 20px
+
+// Экстрамалые девайсы («портретные телефоны», < 576px)
+// @media (max-width: 575.98px) 
+//     .main
+//         &__report
+//             grid-template-rows: auto 1fr minmax(24px, auto)
+
+.main-report
+    &__filter
+        display: grid
+        align-items: start
+        grid-template-columns: auto auto auto auto auto
+        grid-gap: 10px
+
+    &__content
+        min-height: 572px
+        display: grid
+        grid-template-columns: repeat(10, minmax(120px, auto))
+        overflow-x: scroll
+
+    &__footer
+        display: grid
+        grid-template-columns: auto 1fr 
+
+// Экстрамалые девайсы («портретные телефоны», < 576px)
+@media (max-width: 575.98px) 
+    .main-report
+        &__filter
+            grid-template-columns: 1fr
+
+// Малые девайсы («ландшафтные», >= 575px)
+@media (min-width: 576px) and (max-width: 767.98px) 
+    .main-report
+        &__filter
+            grid-template-columns: 1fr
+
+.report-filter
+    &__link-settings, &__link-filter, &__link-clean
+        position: relative
+        text-decoration: none
+        color: $blue
+        font: 500 .875rem/1em 'Roboto'
+        letter-spacing: 0.5px
+        margin-left: 2em
+
+        &::before
+            content: ''
+            position: absolute
+            width: 20px
+            height: 20px
+            top: - 0.2em
+            left: - 1.85em
+
+    &__link-settings
+        &::before
+            background: url("../img/main/main__report/baseline-settings-20-px.svg") no-repeat
+
+    &__link-filter
+        &::before
+            background: url("../img/main/main__report/baseline-search-24-px.svg") no-repeat
+
+    &__link-clean
+        &::before
+            background: url("../img/main/main__report/baseline-cancel-24-px.svg") no-repeat
+
+    &__text-select
+        color: $gray-text
+        font: 0.75rem/1em 'Roboto'
+        justify-self: end
+        align-self: center
+        margin-top: - 0.5em
+
+    &__select-page
+        width: 78px
+        padding: 0.7em
+        border-radius: 2px
+        border: solid 1px $gray
+        font: 500 0.75rem/1em 'Roboto'
+        justify-self: end
+        align-self: start
+        margin-top: -0.7em
+
+@media (max-width: 575.98px) 
+    .report-filter
+        &__link-settings, &__link-filter, &__link-clean
+            font-size: 1.3rem
+            margin-left: 20px
+
+            &::before
+                content: ''
+                position: absolute
+                width: 10px
+                height: 10px
+                top: - 0.2em
+                left: - 1.85em
+                background-size: cover
+
+        &__text-select
+            justify-self: start
+            font-size: 1rem
+            margin-top: 5px
+
+        &__select-page
+            justify-self: start
+            font-size: 1rem
+
+// Малые девайсы («ландшафтные», >= 575px)
+@media (min-width: 576px) and (max-width: 767.98px) 
+    .report-filter
+        &__link-settings, &__link-filter, &__link-clean
+            font-size: 1.3rem
+            margin-left: 20px
+
+        &__text-select, &__select-page
+            justify-self: start
+
+
+.report-content
+    &__item
+        display: grid
+        grid-template-rows: auto auto 1fr
+        grid-template-columns: minmax(125px, auto)
+
+    &__title
+        height: 36px
+        background: $gray-bg-report-title
+        position: relative
+        color: $gray-text
+        font: 0.75rem/1em 'Roboto'
+        padding: 1.1em 0.6em
+
+    &__title-img
+        position: absolute
+        top: 0.7em
+        right: 0
+        width: 24px
+        height: 24px
+        cursor: pointer
+
+    &__subtitle
+        padding: .5em .3em    
+        background-color: rgba(242, 244, 249, 0.4)
+
+        &-input, &-select, &-none
+            width: 100px
+            height: 28px
+            padding: .5em
+            border: solid 1px $gray
+            text-align: center
+            color: $black
+            font: 500 0.75rem/1.33 'Roboto'
+
+        &-none
+            border: none
+
+    &__content-text
+        color: $black
+        font: 0.75rem/1em 'Roboto'
+        padding: 12px 10px
+        border-top: 1px solid $gray
+
+        &:nth-child(2n)
+            background-color: rgba(242, 244, 249, 0.4)
+
+        &--error
+            color: $red
+            font-weight: 500
+
+        &--cb
+            color: $green
+            font-weight: 500
+
+        &--expected
+            color: $gray-bold
+            font-weight: 500
+
+@media (max-width: 575.98px) 
+    .report-content
+        &__title
+            height: 23px
+
+        &__title-img
+            top: 0.3em
+
+
+.repeat-footer
+    &__page-link
+        text-decoration: none
+        color: $gray-footer
+        font: 0.90rem/1em 'Roboto'
+        width: 24px
+        height: 24px
+        margin: 1em 0.5em
+
+        &:hover
+            background: $gray-bg-report-title
+
+        &-end
+            width: 24px
+            height: 24px
+            cursor: pointer
+            
+    &__text
+        color: $gray-text
+        font: 0.90rem/1em 'Roboto'
+        justify-self: end
+
